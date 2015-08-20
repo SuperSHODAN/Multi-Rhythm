@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+	<head>
+		<script src="/socket.io/socket.io.js"></script>
+		<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="rhythm.css">
+		<script src="rhythm.js"></script>
+	</head>
+
+	<body>
+	<div class="row" id="heading" ng-app="scoresApp" ng-controller="scoresCtrl">
+				<div class="col-xs-12 col-centered" id="display">
+					<span> Name: <input ng-model="name"type="text"><span>
+					<span id="count">Count: 0</span>
+					<button ng-click="sendScore(name)">Submit Score</button>
+				</div>
+		</div>
+	<div class="container">
+		
+			<div id="chords" class="row">
+				<div id = "left" class="col-xs-3 col-centered">
+					<div id="left_target" class="target">
+						<img src="left_blue.png" height="90" width="90" id="left_blue" class="hitmark"/>
+						<img src="left_yellow.png" height="90" width="90" id="left_yellow" class="hitmark"/>
+						<img src="left_orange.png" height="90" width="90" id="left_orange" class="hitmark"/>
+						<img src="left_red.png" height="90" width="90" id="left_red" class="hitmark"/>
+						<img src="left_green.png" height="90" width="90" id="left_green" class="hitmark"/>
+					</div>
+				</div>
+				<div id = "down" class="col-xs-3 col-centered">
+					<div id="down_target" class="target">
+						<img src="down_blue.png" height="90" width="90" id="down_blue" class="hitmark"/>
+						<img src="down_yellow.png" height="90" width="90" id="down_yellow" class="hitmark"/>
+						<img src="down_orange.png" height="90" width="90" id="down_orange" class="hitmark"/>
+						<img src="down_red.png" height="90" width="90" id="down_red" class="hitmark"/>
+						<img src="down_green.png" height="90" width="90" id="down_green" class="hitmark"/>
+					</div>
+				</div>
+				<div id = "up" class="col-xs-3 col-centered">
+					<div id="up_target" class="target">
+						<img src="up_blue.png" height="90" width="90" id="up_blue" class="hitmark"/>
+						<img src="up_yellow.png" height="90" width="90" id="up_yellow" class="hitmark"/>
+						<img src="up_orange.png" height="90" width="90" id="up_orange" class="hitmark"/>
+						<img src="up_red.png" height="90" width="90" id="up_red" class="hitmark"/>
+						<img src="up_green.png" height="90" width="90" id="up_green" class="hitmark"/>
+					</div>
+				</div>
+				<div id = "right" class="col-xs-3 col-centered">
+					<div id="right_target" class="target">
+						<img src="right_blue.png" height="90" width="90" id="right_blue" class="hitmark"/>
+						<img src="right_yellow.png" height="90" width="90" id="right_yellow" class="hitmark"/>
+						<img src="right_orange.png" height="90" width="90" id="right_orange" class="hitmark"/>
+						<img src="right_red.png" height="90" width="90" id="right_red" class="hitmark"/>
+						<img src="right_green.png" height="90" width="90" id="right_green" class="hitmark"/>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
