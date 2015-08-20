@@ -1,0 +1,57 @@
+body {
+	min-width:1000px;
+	width: auto !important;
+	width:1000px;
+	background-image: url("http://i.imgur.com/h2DlPU1.png");
+	background-color: #111111;
+}
+.container {
+    min-width: 400px !important;
+	height: 800px !important;
+	overflow: hidden;
+	border: 0;
+}
+.note {
+	display: block;
+	margin: auto;
+	position: absolute;
+	top: 800px;
+}
+.target {
+	display: block;
+	margin: auto;
+	height: 90px;
+	width: 90px;
+	position: fixed;
+	top: 25px;
+}
+.hitmark {
+	opacity: 0;
+	position: absolute;
+}
+#up_target {
+	background-image: url("up_grey.png");
+	background-size: 90px;
+}
+#left_target {
+	background-image: url("left_grey.png");
+	background-size: 90px;
+}
+#down_target {
+	background-image: url("down_grey.png");
+	background-size: 90px;
+}
+#right_target {
+	background-image: url("right_grey.png");
+	background-size: 90px;
+}
+#heading {
+	display: block;
+	margin: auto;
+	text-align: center;
+}
+#display {
+	position: absolute;
+	background-color: rgba(190, 190, 190, 0.9);
+	z-index: 1;
+}

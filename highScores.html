@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <title>High Scores</title>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      body { font: 13px Helvetica, Arial; }
+      .navigation {
+        background: lightblue;
+        padding: 25px;
+        position: fixed;
+        bottom: 0;
+        width: 50%;
+        height: 10%;
+        float: left;
+        font-size: 42px;
+        text-align: center;
+      }
+      #scores { list-style-type: none; margin: 0; padding: 0; }
+      #scores li { padding: 5px 10px; }
+      #scores li:nth-child(odd) { background: #eee; }
+    </style>
+  </head>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="rhythm.css">
+  <script src="rhythm.js"></script>
+  <body ng-app="scoresApp" ng-controller="scoresCtrl">
+    <h1 style="text-align: center; background-color: rgba(195, 195, 195, 0.9)">High Scores</h1>
+      <ol id="scores">
+        <li ng-repeat="score in scores" style="background-color: rgba(240, 240, 240, 0.9)">{{score.name}}: {{score.score}}</li>
+      </ol>
+    <div class="row">
+    <a class="col-xs-6" href='/chat'><div class="navigation">Chat</div></a>
+    <a class="col-xs-6" href='/game'><div class="navigation">Game</div></a>
+    <div>
+  </body>
+</html>

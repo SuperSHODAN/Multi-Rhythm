@@ -1,2 +1,2 @@
 # Multi-Rhythm
-An Open Source Web Based Rhythm game that uses WebSockets and Node.js to implement multiplayer across any machines that connect to the server.
+An Open Source Web Based Rhythm game that uses WebSockets and Node.js to implement multiplayer across any machines that connect to the server. This Project uses Angular to handle any of multiple additional pages that may be attached to this project. Jquery is used to animate the game, while javascript logic is used to compute the actions that must be done. WebSockets handles all of the interaction between the user and server for sending relevant game data back and forth.

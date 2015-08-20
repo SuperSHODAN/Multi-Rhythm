@@ -1,0 +1,28 @@
+{
+  "name": "pharmedirhythm",
+  "version": "0.0.1",
+  "description": "ddr clone used to learn socket.io",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://brooksz28@bitbucket.org/nicholas_mahony/pharmedirhythm.git"
+  },
+  "keywords": [
+    "ddr",
+    "clone",
+    "socket.io",
+    "learning"
+  ],
+  "author": "Nick and Brooks",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/nicholas_mahony/pharmedirhythm#readme",
+  "dependencies": {
+    "express": "^4.13.3",
+    "http": "0.0.0",
+    "socket.io": "^1.3.6",
+    "twit": "^2.1.0"
+  }
+}
