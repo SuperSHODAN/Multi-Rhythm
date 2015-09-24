@@ -10,3 +10,5 @@ All of the game logic and animation that runs across the project is included in 
 The three html pages in the main directory should eventually be combined into one cohesive webpages that uses the three as modifiable views.
 
 Next main goal for the project is to have .json objects that represent a beatmap for a particular song (and includes the .mp3 file inside it perhaps) and to read that map in on the serverside while broadcasting the mp3 and projecting the beatmap to all users that tune in.
+
+You can run this project by using npm to install the three dependencies, express, socket.io, and twit, and then running node.js on index.js. Make sure to connect to localhost:(portnumber is usually 2814).
